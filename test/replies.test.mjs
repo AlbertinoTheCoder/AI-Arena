@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {cleanPlainText,enforceReply} from '../public/text.js';
+import {debateInstructions,topicLimits} from '../rules.mjs';
+import {makePrompt} from '../server.mjs';
+test('plain text strips Markdown before display, speech and relay',()=>{assert.equal(cleanPlainText('# A point\n**jobs**, __memory__, and *trust*. [Source](https://example.com)'), 'A point\njobs, memory, and trust. Source');});
+test('hard sentence and word caps actually shorten a verbose reply',()=>{const reply='**Yes**, players can trade. A shared currency helps. Here are three more paragraphs. This should never appear.';const result=enforceReply(reply,{words:60,maxSentences:2});assert.equal(result.text,'Yes, players can trade. A shared currency helps.');assert.equal(result.trimmed,true);assert.ok(enforceReply('word '.repeat(100),{words:30,maxSentences:0}).wordCount<=30);assert.equal(enforceReply('Hello there.',{words:60,maxSentences:2}).trimmed,false);});
+test('abbreviations do not eat the sentence limit',()=>{assert.equal(enforceReply('Dr. Smith disagrees. His reason is clear. Third claim.',{words:60,maxSentences:2}).text,'Dr. Smith disagrees. His reason is clear.');});
+test('topic brevity constraints are respected in addition to the UI caps',()=>{assert.deepEqual(topicLimits('Keep your responses short (1–2 sentences maximum).',200,0),{words:60,maxSentences:2});assert.deepEqual(topicLimits('Use at most 20 words.',100,3),{words:20,maxSentences:3});});
+test('debate prompt assigns opposing roles and differentiates civil, heated and roast tones',()=>{assert.ok(debateInstructions('polite','grok').includes('You are A'));assert.ok(debateInstructions('polite','codex').includes('You are B'));assert.ok(debateInstructions('heated','codex').includes('sarcasm'));assert.ok(debateInstructions('roast','grok').includes('personal jabs'));const prompt=makePrompt({topic:'Can AI be wrong?',words:30,maxSentences:2,debateMode:'roast',messages:[]},'codex');assert.ok(prompt.includes('maximum 2 sentences'));assert.ok(prompt.includes('Plain text only, no **'));assert.ok(prompt.includes('DEBATE, NOT A COOPERATIVE CHAT'));});

@@ -1,0 +1,12 @@
+.arena/
+node_modules/
+.server-*.log
+.venv/
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/
+*.py[cod]
+.codex/
+.cursor/mcp.json
