@@ -119,7 +119,7 @@ export function createArena({runner=executeReply,root=ROOT,port=3210,roll=()=>ra
     const diceRoll=roll();lastStart=Date.now();active={id:randomUUID(),status:'running',diceRoll,firstSpeaker:diceRoll%2?'grok':'codex',agents,language,debateMode,...topicLimits(topic,words,maxSentences),topic:topic.trim(),turns,timeout,messages:[],current:null,error:null,started:Date.now(),controller:new AbortController(),child:null};
     json(res,202,{id:active.id});void runLoop(active);return;
    }
-   const files={'/':['index.html','text/html'],'/app.js':['app.js','text/javascript'],'/dice.js':['dice.js','text/javascript'],'/speech.js':['speech.js','text/javascript'],'/neural.js':['neural.js','text/javascript'],'/pronounce.js':['pronounce.js','text/javascript'],'/text.js':['text.js','text/javascript'],'/legal.js':['legal.js','text/javascript'],'/terms-data.js':['terms-data.js','text/javascript'],'/style.css':['style.css','text/css']};
+   const files={'/':['index.html','text/html'],'/app.js':['app.js','text/javascript'],'/dice.js':['dice.js','text/javascript'],'/reply-view.js':['reply-view.js','text/javascript'],'/speech.js':['speech.js','text/javascript'],'/neural.js':['neural.js','text/javascript'],'/pronounce.js':['pronounce.js','text/javascript'],'/text.js':['text.js','text/javascript'],'/legal.js':['legal.js','text/javascript'],'/terms-data.js':['terms-data.js','text/javascript'],'/style.css':['style.css','text/css']};
    if(req.method==='GET'&&files[url.pathname]){const [file,type]=files[url.pathname];res.writeHead(200,{'Content-Type':type,'Cache-Control':'no-store'});res.end(await readFile(path.join(root,'public',file)));return;}
    json(res,404,{error:'Not found'});
   }catch(e){if(!res.headersSent)json(res,500,{error:e.message});else res.end();}

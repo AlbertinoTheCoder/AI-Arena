@@ -1,0 +1,2 @@
+// Reconcile word spans in place: existing words keep their animation state.
+export function updateStreamingText(body,text){const words=String(text).match(/\S+\s*/gu)||[];let added=0;for(let i=0;i<words.length;i++){let span=body.children[i];if(!span){span=body.ownerDocument.createElement('span');span.className='stream-word';span.style.animationDelay=Math.min(added++,8)*25+'ms';body.append(span);}if(span.textContent!==words[i])span.textContent=words[i];}while(body.children.length>words.length)body.lastElementChild.remove();}

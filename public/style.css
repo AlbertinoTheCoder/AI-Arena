@@ -20,4 +20,4 @@
 .streaming-message .message-body::after{content:"";display:inline-block;width:2px;height:1em;margin-left:4px;background:var(--lime);vertical-align:-2px;animation:stream-caret .8s steps(2) infinite}.streaming-message.slot-b .message-body::after{background:var(--blue)}.streaming-message .message-head small{color:var(--lime)}@keyframes stream-caret{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.streaming-message .message-body::after{animation:none}}
 
 .is-streaming .message,.streaming-message{animation:none}
-
+.stream-word{animation:word-reveal .24s ease-out both}@keyframes word-reveal{from{opacity:0;filter:blur(2px)}to{opacity:1;filter:blur(0)}}@media(prefers-reduced-motion:reduce){.stream-word{animation:none}}

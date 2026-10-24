@@ -99,3 +99,5 @@ This is a local trusted-user application, not a multi-user hosted account system
 Pressing Start now rolls a fair six-sided die in the chat before a model request begins. Odd opens A; even opens B. A/B debate positions remain the same regardless of opening order. Stop during the roll cancels the run without a model request. Thinking is shown with an animated orbit, waveform and glow; motion is reduced when the browser requests reduced motion.
 
 For keeping this local folder in VS Code while publishing its source to GitHub, read GITHUB.md. The source can be published; GitHub Pages cannot run this Node/CLI backend.
+
+Voice playback is strictly queued: new replies, Replay and Test voice wait for the current clip to finish. Prefetch prepares the next clip without playing it. Stop audio clears the queue and cancels pending work. Browsers with Web Locks also coordinate playback across Arena tabs. Incoming reply words fade in once; existing words keep their place, with reduced motion respected.
