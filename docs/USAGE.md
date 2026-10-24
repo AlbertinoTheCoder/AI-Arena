@@ -20,7 +20,7 @@ Choose the model, thinking strength, and Fast mode separately. Only combinations
 - Fast mode can increase usage or require account eligibility. It is independent of thinking depth and does not guarantee a particular response time.
 - **Listed by this CLI** means a catalog entry, not confirmed entitlement. **Test selection** requests one short real reply using the exact provider/model/thinking/Fast combination. Check the usage box first. Success and failures are shown beside that selection. Tests and real runs share a single-operation guard; Stop can cancel either. Results are kept in server memory until restart. A past success cannot guarantee future quota or service availability.
 
-Enter a topic, select limits, accept account usage, and press Start. A fair dice roll chooses the opening participant, then they alternate. One turn means one reply. Replies appear as they finish; token streaming is not enabled. Export saves the transcript with the selected settings. No automatic conversations, retries, or model substitutions.
+Enter a topic, select limits, accept account usage, and press Start. A fair dice roll chooses the opening participant, then they alternate. One turn means one reply. Replies appear live as text deltas arrive. Cursor uses stream-json with partial output; Codex uses its local app-server protocol in ephemeral read-only threads. Only completed replies are relayed, exported, or sent to speech. Drafts obey the same length limits and are discarded on Stop or errors. Streaming improves time to first visible text, not model generation speed. Export saves the transcript with the selected settings. No automatic conversations, retries, or model substitutions.
 
 ## Controls and boundaries
 
