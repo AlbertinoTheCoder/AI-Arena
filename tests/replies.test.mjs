@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {cleanPlainText,enforceReply} from '../public/text.js';
-import {debateInstructions,topicLimits} from '../rules.mjs';
-import {makePrompt} from '../server.mjs';
+import {debateInstructions,topicLimits} from '../src/rules.mjs';
+import {makePrompt} from '../src/server.mjs';
 test('plain text strips Markdown before display, speech and relay',()=>{assert.equal(cleanPlainText('# A point\n**jobs**, __memory__, and *trust*. [Source](https://example.com)'), 'A point\njobs, memory, and trust. Source');});
 test('hard sentence and word caps actually shorten a verbose reply',()=>{const reply='**Yes**, players can trade. A shared currency helps. Here are three more paragraphs. This should never appear.';const result=enforceReply(reply,{words:60,maxSentences:2});assert.equal(result.text,'Yes, players can trade. A shared currency helps.');assert.equal(result.trimmed,true);assert.ok(enforceReply('word '.repeat(100),{words:30,maxSentences:0}).wordCount<=30);assert.equal(enforceReply('Hello there.',{words:60,maxSentences:2}).trimmed,false);});
 test('abbreviations do not eat the sentence limit',()=>{assert.equal(enforceReply('Dr. Smith disagrees. His reason is clear. Third claim.',{words:60,maxSentences:2}).text,'Dr. Smith disagrees. His reason is clear.');});

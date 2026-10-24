@@ -1,4 +1,4 @@
-import {discover,execute} from './cli.mjs';
+import {discover,execute} from '../src/cli.mjs';
 import {existsSync} from 'node:fs';
 for(const [name,spec] of Object.entries(discover())){
  try{if(!spec.entry||!existsSync(spec.entry))throw new Error('CLI entrypoint missing');const r=await execute({spec,args:['--help'],cwd:process.cwd(),timeout:20000});console.log(`${name}: installed; help OK\n${spec.entry}\n`);if(!r.out.includes('--model'))process.exitCode=1;}

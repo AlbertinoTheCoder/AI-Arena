@@ -13,8 +13,9 @@ export function cursorCatalog(text){
  return [...groups.values()];
 }
 export function loadCatalog(){
- let cursor=[];try{cursor=cursorCatalog(readFileSync(new URL('./cursor-models.txt',import.meta.url),'utf8'));}catch{}
+ let cursor=[];try{cursor=cursorCatalog(readFileSync(new URL('../config/cursor-models.txt',import.meta.url),'utf8'));}catch{}
  let codex=[];try{const cache=JSON.parse(readFileSync(path.join(process.env.CODEX_HOME||path.join(os.homedir(),'.codex'),'models_cache.json'),'utf8'));codex=cache.models.filter(m=>m.visibility==='list').map(m=>({id:m.slug,label:m.display_name,variants:m.supported_reasoning_levels.flatMap(r=>[false,...(m.additional_speed_tiers?.includes('fast')?[true]:[])].map(fast=>({model:m.slug,effort:r.effort,fast})))}));}catch{}
+ if(!codex.length)try{codex=JSON.parse(readFileSync(new URL('../config/codex-models.json',import.meta.url),'utf8'));}catch{}
  return {cursor,codex};
 }
 export const defaults={grok:{provider:'cursor',model:'grok-4.7',effort:'low',fast:false},codex:{provider:'codex',model:'gpt-6.1-sol',effort:'low',fast:false}};

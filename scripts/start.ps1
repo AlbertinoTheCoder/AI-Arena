@@ -1,4 +1,4 @@
 $ErrorActionPreference = 'Stop'
-Set-Location -LiteralPath $PSScriptRoot
+Set-Location -LiteralPath (Split-Path -Parent $PSScriptRoot)
 Write-Host 'Open http://127.0.0.1:3210 after the server is ready. Ctrl+C stops the server.'
-& node server.mjs
+& npm.cmd start

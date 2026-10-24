@@ -22,7 +22,7 @@ def tighten_audio(audio):
 
 async def main():
     request = json.loads(sys.stdin.buffer.read(100000).decode('utf-8'))
-    communicate = edge_tts.Communicate(request['text'], request['voice'])
+    communicate = edge_tts.Communicate(request['text'], request['voice'], pitch=request.get('pitch', '+0Hz'))
     audio = bytearray()
     async with asyncio.timeout(45):
         async for chunk in communicate.stream():

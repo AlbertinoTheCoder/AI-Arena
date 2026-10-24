@@ -1,6 +1,6 @@
 # AI Arena — Terms of Use
 
-Version 2026-10-23.1 — 23 October 2026
+Version 2026-10-23.2 — 23 October 2026
 
 ## 1. Scope and acceptance
 
@@ -32,7 +32,7 @@ AI Arena uses the CLI credentials and subscriptions available to its local backe
 
 ## 8. Separate optional topic permission
 
-Mandatory acceptance of these terms does not authorize optional Codex topic generation. That feature requires a separate, unchecked consent. If enabled, the initial action requests three topics and each dice reroll requests another three using the displayed Codex model and reasoning settings. You may decline or withdraw that permission without losing ordinary debate features. Withdrawing it prevents future topic requests and cancels a pending topic task where possible; it cannot undo usage already incurred or processing already performed by a provider.
+Mandatory acceptance of these terms does not authorize optional AI topic generation. That feature requires a separate, unchecked consent. If enabled, the initial action requests three topics and each dice reroll requests another three through the CLI you select, Codex or Cursor, using the displayed model and reasoning settings for that CLI. You may decline or withdraw that permission without losing ordinary debate features. Withdrawing it prevents future topic requests and cancels a pending topic task where possible; it cannot undo usage already incurred or processing already performed by a provider.
 
 ## 9. Third-party processing and speech
 
@@ -66,8 +66,8 @@ Applicable mandatory law continues to apply. These terms do not require you to w
 
 A material change to these terms requires acceptance of the updated version before further generation or speech use. Optional topic consent is versioned separately. Contact the person or organization operating your installation about its identity, support arrangements, data handling, or these terms. By selecting the required acceptance checkbox and confirming acceptance, you acknowledge that you have had the opportunity to read these terms and agree to them. You separately choose whether to permit optional topic generation.
 
-## Optional Codex Topic Permission
+## Optional AI Topic Permission (Codex or Cursor)
 
-Version 2026-10-23.1
+Version 2026-10-23.2
 
-Optional permission: use my local Codex account to suggest debate topics. Enabling this requests one batch of exactly three topics. Every dice reroll requests another batch of three and may consume my Codex allowance or incur charges. The displayed Codex model runs at Low thinking strength with Fast mode off. Only the suggestion request, selected language, and previous suggestion batch are sent; my chat transcript is not included. No requests happen merely because I reload the page. I can withdraw this permission at any time without losing debate access. Already-used provider allowance cannot be reversed.
+Optional permission: use my local Codex or Cursor account, whichever CLI I select, to suggest debate topics. Enabling this requests one batch of exactly three topics. Every dice reroll requests another batch of three and may consume that account’s allowance or incur charges. The displayed model for the selected CLI runs at Low thinking strength with Fast mode off. Only the suggestion request, selected language, and previous suggestion batch are sent; my chat transcript is not included. No requests happen merely because I reload the page. I can withdraw this permission at any time without losing debate access. Already-used provider allowance cannot be reversed.

@@ -1,7 +1,7 @@
 import {mkdirSync,readFileSync,writeFileSync,renameSync,appendFileSync} from 'node:fs';
 import path from 'node:path';
 import {randomBytes} from 'node:crypto';
-import {TERMS_VERSION,TOPIC_CONSENT_VERSION} from './public/terms-data.js';
+import {TERMS_VERSION,TOPIC_CONSENT_VERSION} from '../public/terms-data.js';
 export function createConsentStore(root){
  const directory=path.join(root,'.arena'),file=path.join(directory,'consents.json');let records={};try{records=JSON.parse(readFileSync(file,'utf8'));}catch{}
  const idFrom=req=>req.headers.cookie?.match(/(?:^|;\s*)arena_browser=([a-f0-9]{48})(?:;|$)/)?.[1];

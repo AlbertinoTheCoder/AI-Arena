@@ -1,0 +1,444 @@
+[
+  {
+    "id": "gpt-6.1-sol",
+    "label": "GPT-6.1-Sol",
+    "variants": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "low",
+        "fast": false
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "low",
+        "fast": true
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "fast": false
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "fast": true
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "fast": false
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "fast": true
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "fast": false
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "xhigh",
+        "fast": true
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "max",
+        "fast": false
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "max",
+        "fast": true
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "fast": false
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "ultra",
+        "fast": true
+      }
+    ]
+  },
+  {
+    "id": "gpt-6-astra",
+    "label": "GPT-6-Astra",
+    "variants": [
+      {
+        "model": "gpt-6-astra",
+        "effort": "low",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "low",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "medium",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "medium",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "xhigh",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "xhigh",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "max",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "max",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "ultra",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-astra",
+        "effort": "ultra",
+        "fast": true
+      }
+    ]
+  },
+  {
+    "id": "gpt-6-sol",
+    "label": "GPT-6-Sol",
+    "variants": [
+      {
+        "model": "gpt-6-sol",
+        "effort": "low",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "low",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "medium",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "medium",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "high",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "high",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "xhigh",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "xhigh",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "max",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "max",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "ultra",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-sol",
+        "effort": "ultra",
+        "fast": true
+      }
+    ]
+  },
+  {
+    "id": "gpt-6-luna",
+    "label": "GPT-6-Luna",
+    "variants": [
+      {
+        "model": "gpt-6-luna",
+        "effort": "low",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "low",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "medium",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "medium",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "high",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "fast": true
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "max",
+        "fast": false
+      },
+      {
+        "model": "gpt-6-luna",
+        "effort": "max",
+        "fast": true
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-sol",
+    "label": "GPT-5.6-Sol",
+    "variants": [
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "low",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "low",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "medium",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "medium",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "xhigh",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "xhigh",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "max",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "ultra",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "effort": "ultra",
+        "fast": true
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-terra",
+    "label": "GPT-5.6-Terra",
+    "variants": [
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "low",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "low",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "medium",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "high",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "high",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "xhigh",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "xhigh",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "max",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "max",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "ultra",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-terra",
+        "effort": "ultra",
+        "fast": true
+      }
+    ]
+  },
+  {
+    "id": "gpt-5.6-luna",
+    "label": "GPT-5.6-Luna",
+    "variants": [
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "low",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "low",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "xhigh",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "xhigh",
+        "fast": true
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "max",
+        "fast": false
+      },
+      {
+        "model": "gpt-5.6-luna",
+        "effort": "max",
+        "fast": true
+      }
+    ]
+  }
+]
