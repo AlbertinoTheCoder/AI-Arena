@@ -27,7 +27,7 @@ The current development PC already has this environment. Speech requires Interne
 - **Site offline:** keep the server terminal open and use the numeric address printed there.
 - **Missing CLI:** run doctor; install/sign in to the desired CLI. JavaScript entrypoints can be overridden using ARENA_CURSOR_ENTRY and ARENA_CODEX_ENTRY.
 - **Access or usage error:** check the same account and exact model in that provider. Arena does not retry or silently substitute another model.
-- **Slow Cursor replies:** each turn launches a new CLI process and shows its completed result. Compare the same model, thinking strength and Fast setting; the first reply also follows a 1.1-second dice animation. Later turns include a one-second pause. The growing transcript adds context. Cursor's open app may show streamed text sooner.
+- **Slow Cursor replies:** each turn launches a new CLI process and shows its completed result. Compare the same model, thinking strength and Fast setting; the first reply also follows a five-second dice animation. Later turns include a one-second pause. The growing transcript adds context. Cursor's open app may show streamed text sooner.
 - **Speech unavailable:** confirm the local Python environment, Internet access and selected voice. The external speech service can be unavailable.
 
 Saved public catalogs are used when a local listing/cache is unavailable. They may be stale; use Test selection to check your exact account access.
