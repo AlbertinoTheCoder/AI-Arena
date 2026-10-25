@@ -14,3 +14,5 @@ The server validates Host/Origin, uses a per-server mutation token, bounds input
 
 Protocol references: [Codex app server](https://learn.chatgpt.com/docs/app-server) and the installed Cursor CLI's --output-format / --stream-partial-output help. Only assistant text deltas enter the live draft; reasoning and tool events are excluded. Drafts do not enter speech, export or the next participant's context. Completed output remains authoritative.
 
+
+GitHub Pages serves the static interface. The loopback helper permits only the published GitHub origin through CORS. Public health checks expose version only; pairing requires the random terminal code and creates a bounded, expiring header-authenticated session. Remote consent identity is mapped on the helper, so third-party cookies are unnecessary. Cross-origin SSE uses fetch streaming with Authorization headers.

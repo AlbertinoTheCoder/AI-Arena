@@ -1,3 +1,4 @@
+import {apiFetch as fetch} from './connection.js';
 import {TERMS_VERSION,TOPIC_CONSENT_VERSION,termsTitle,termsSections,topicConsentText} from './terms-data.js';
 const el=(tag,text,className)=>{const node=document.createElement(tag);if(text)node.textContent=text;if(className)node.className=className;return node;};
 export function createLegalUI({post,getLanguage,onAccepted,onChange}){

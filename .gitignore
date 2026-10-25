@@ -10,3 +10,4 @@ __pycache__/
 *.py[cod]
 .codex/
 .cursor/mcp.json
+dist/

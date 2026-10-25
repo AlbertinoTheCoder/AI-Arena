@@ -1,3 +1,4 @@
+import {apiFetch as fetch} from './connection.js';
 import {detectLanguage} from './speech.js';
 import {cleanPlainText} from './text.js';
 import {speakable} from './pronounce.js';
