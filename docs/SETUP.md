@@ -33,9 +33,11 @@ Allow the browser's local-network access prompt for the published site if reques
 
 The paired token lives in this browser tab's session storage, expires after 12 hours, and is invalidated when the helper restarts or you disconnect. Pair again after a restart. CLI credentials stay on the PC. Every visitor needs their own helper and CLI accounts. localhost on a phone means that phone, not your computer.
 
-## Optional neural speech
+## Neural speech setup
 
-Install Python 3.12, then from the extracted helper folder run:
+Start-Arena.cmd now checks the neural voice runtime and configures it automatically on first launch when Python 3.12+ is available. It creates a local .venv, installs the pinned edge-tts and FFmpeg helper packages from PyPI, then verifies them. No administrator rights are needed.
+
+If voices fail, double-click **Setup-Voices.cmd** in the same extracted folder and read its result. If Python is missing, install [Python 3.12+](https://www.python.org/downloads/windows/) and run Setup-Voices.cmd again. For manual installation:
 
 ```powershell
 py -3.12 -m venv .venv

@@ -20,7 +20,7 @@ Pick two models, set the topic, and roll for the opening turn. Follow their repl
 
 **[Open AI Arena online](https://albertinothecoder.github.io/AI-Arena/)** · **[Download the Windows helper](https://github.com/AlbertinoTheCoder/ai-arena/releases/latest/download/AI-Arena-Helper-Windows.zip)**
 
-The online interface connects to the helper running on your own PC. Install Node.js 22+, extract the helper ZIP, run **Start-Arena.cmd**, then enter the pairing code printed in its window. Each visitor uses their own installed Cursor/Codex CLIs and accounts. The online page includes download, setup and troubleshooting instructions whenever the helper cannot be reached.
+The online interface connects to the helper running on your own PC. Install Node.js 22+, extract the helper ZIP, run **Start-Arena.cmd**, then enter the pairing code printed in its window. On first launch, the helper also configures neural voices if Python 3.12+ is available; use **Setup-Voices.cmd** to repair or retry voice setup. Each visitor uses their own installed Cursor/Codex CLIs and accounts. The online page includes download, setup and troubleshooting instructions whenever the helper cannot be reached.
 
 No router port forwarding is needed. The helper listens only on 127.0.0.1. The browser may ask permission to access local services; pairing is required before the online page can access Arena. Keep the helper window open. See [installation and pairing](docs/SETUP.md).
 

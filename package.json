@@ -12,7 +12,8 @@
     "refresh-models": "node scripts/refresh-models.mjs",
     "test": "node --test tests/*.test.mjs",
     "doctor": "node scripts/doctor.mjs",
-    "build:pages": "node scripts/build-pages.mjs"
+    "build:pages": "node scripts/build-pages.mjs",
+    "setup:voices": "node scripts/setup-voices.mjs"
   },
   "description": "Local AI debates powered by your Cursor and Codex CLI accounts, with multilingual neural voices."
 }
