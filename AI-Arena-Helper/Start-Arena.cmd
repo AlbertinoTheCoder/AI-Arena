@@ -1,4 +1,8 @@
 @echo off
+setlocal
+rem Modifica questa porta se necessario (1024-65535).
+set "PORT=7777"
+
 cd /d "%~dp0"
 where node >nul 2>nul
 if errorlevel 1 (
